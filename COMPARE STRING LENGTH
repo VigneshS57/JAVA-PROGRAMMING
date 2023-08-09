@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+    String s=sc.nextLine();
+    String t=sc.nextLine();
+    char[]a=s.toCharArray();
+    char []b=t.toCharArray();
+    if((a.length-1)==(b.length-1)){
+      System.out.println("true");
+    }
+    else
+    System.out.println("false");
+  }
+}
