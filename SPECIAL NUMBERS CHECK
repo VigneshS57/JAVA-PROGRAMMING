@@ -1,0 +1,32 @@
+//A special number is a number which is equal to the sum of the factorials of its digits.
+
+import java.util.*;  
+public class Main 
+{  
+public static void main(String args[])  
+{  
+int num, number, rem, sum= 0;  
+Scanner sc = new Scanner(System.in);  
+number = sc.nextInt();  
+num = number;  
+while (number > 0)  
+{  
+rem = number % 10;  
+int fact=1;  
+for(int i=1; i<=rem; i++)  
+{  
+fact=fact*i;  
+}  
+sum = sum+ fact;  
+number = number / 10;  
+}  
+if(num==sum)  
+{  
+System.out.println("YES");  
+}  
+else  
+{  
+System.out.println("NO");  
+}  
+}  
+} 
